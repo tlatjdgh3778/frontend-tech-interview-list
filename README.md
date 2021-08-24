@@ -1,7 +1,7 @@
 # 프론트엔드 기술면접 질문 정리
 * **본 포스팅은 구글링하여 나오는 다양한 블로그들을 참고함**
 
-### WEB / JavaScript
+### ✔WEB / JavaScript
 * [브라우저의 렌더링 과정에 대해서 설명](./프론트엔드%20기술면접%20질문(1)/README.md/#브라우저의-렌더링-과정에-대해서-설명)
 * [브라우저 저장소(local storage, session storage, 쿠키)](./프론트엔드%20기술면접%20질문(1)/README.md/#브라우저-저장소local-storage-session-storage-쿠키)
 * [자바스크립트의 This의 용법 아는대로 설명](./프론트엔드%20기술면접%20질문(1)/README.md/#this의-용법-아는대로-설명)
