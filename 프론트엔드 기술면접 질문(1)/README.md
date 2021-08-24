@@ -1,11 +1,11 @@
 # 1편
-
-* [브라우저의 렌더링 과정에 대해서 설명](#-브라우저의-렌더링-과정에-대해서-설명)
+## 목차
+* [브라우저의 렌더링 과정에 대해서 설명](#브라우저의-렌더링-과정에-대해서-설명)
 * [브라우저 저장소(local storage, session storage, 쿠키)](#브라우저-저장소local-storage-session-storage-쿠키)
-* [This의 용법 아는대로 설명](This의-용법-아는대로-설명)
-* [이벤트 버블링, 이벤트 캡처링](이벤트-버블링-이벤트-캡처링)
-* [비동기 처리에 대한 설명(Callback, Promise, async await)](비동기-처리에-대한-설명Callback-Promise-async-await)
-* [클로저에 대해 설명](클로저에-대해-설명)
+* [This의 용법 아는대로 설명](#this의-용법-아는대로-설명)
+* [이벤트 버블링, 이벤트 캡처링](#이벤트-버블링-이벤트-캡처링)
+* [비동기 처리에 대한 설명(Callback, Promise, async await)](#비동기-처리에-대한-설명callback-promise-async-await)
+* [클로저에 대해 설명](#클로저에-대해-설명)
 
 ## 브라우저의 렌더링 과정에 대해서 설명
 <p align='center'><img src="https://davidhwang.netlify.app/static/4ec9d46ea98033d0bf8d5c6966ba0462/d19c0/browser.png" /></p>
@@ -22,6 +22,8 @@
 * JavaScript 해석기는 파싱한 결과를 렌더링 엔진에 전달하여 만들어진 DOM tree를 조작한다.
 * 조작이 완료된 DOM Node(DOM tree안에 있는 요소)는 render ojbect(render tree안에 있는 요소)로 변한다.
 * UI 백엔드가 render object를 브라우저 렌더링 화면에 띄워준다.
+
+* [맨 위로](#목차)
 
 ## 브라우저 저장소(local storage, session storage, 쿠키)
 ### Web Storage
@@ -54,6 +56,8 @@
 * 즉, window 객체와 동일한 유효 범위 및 생존 기간을 가지며, 탭/윈도우를 닫을 시 데이터가 삭제된다.
 * 동일한 탭/윈도우라도 다른 도메인이라면 또 다른 세션 스토리지가 생성된다.
 * 잠시 동안 필요한 정보를 저장하기에 적합하다. (ex. 입력 폼 저장, 일회성 로그인)
+
+* [맨 위로](#목차)
 
 ## This의 용법 아는대로 설명
 자바스크립트는 함수 호출 방식에 따라서 this에 바인딩 할 객체가 동적으로 결정된다.
@@ -152,6 +156,9 @@ apply의 경우는 두 번째 매개변수를 배열 형태(또는 유사배열 
 
 bind는 함수에 인자로 전달한 this가 새로운 함수를 리턴한다. apply, call과 같이 함수를 실행하지는 않기 때문에 명시적으로 함수를 호출할 필요가 있다.
 
+* [맨 위로](#목차)
+
+
 ## 이벤트 버블링, 이벤트 캡처링
 ### 이벤트 버블링
 **이벤트 버블링**이란 한 요소에 이벤트가 발생하면 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러, 최상단의 부모 요소를 만날 때까지 반복되면서 핸들러가 동작하는 현상을 말한다.
@@ -162,6 +169,8 @@ addEventListener의 옵션 객체에 { capture: true }또는 true를 설정해�
 
 더욱 자세한 설명은 여기
 [이벤트 버블링과 캡처링](https://velog.io/@tlatjdgh3778/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC-%EC%BA%A1%EC%B2%98%EB%A7%81%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A0%95%EB%A6%AC)
+
+* [맨 위로](#목차)
 
 ## 비동기 처리에 대한 설명(Callback, Promise, async await)
 비동기 처리란 특정 코드의 연산이 끝날 때까지 코드의 실행을 멈추지 않고 다음 코드를 먼저 실행하는 것을 말한다.
@@ -337,6 +346,8 @@ async function getData() {
 }
 ```
 
+* [맨 위로](#목차)
+
 ## 클로저에 대해 설명
 클로저는 함수와 함수가 선언된 어휘적 환경(Lexical environment)의 조합이다.
 흔히 함수 내에서 함수를 정의하고 사용하면 클로저라고 한다.
@@ -426,7 +437,7 @@ console.log(matrix.get_title());
 4. `factory_movie`의 지역변수 `title`의 값을 읽고 수정할 수 있는 것은 `factory_movie` 메소드를 통해서 만들어진 객체 뿐이다.
 5. `factory_movie` 가 어떠한 값을 리턴했을 때 그 함수는 생이 마감되었기 때문에 지역변수인 `title`은 `factory_movie` 의 내부함수인 **`get_title` 과 `set_title`을 통해서만 접근할 수 있는 `private`한 변수가 되는 것**이다.
 
-
+* [맨 위로](#목차)
 
 ## 프로토타입에 대해 설명
 ## 이벤트 루프에 대해 설명
